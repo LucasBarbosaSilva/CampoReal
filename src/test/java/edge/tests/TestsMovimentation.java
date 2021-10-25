@@ -7,16 +7,14 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import edge.core.BaseTest;
 import edge.pages.MenuPage;
 import edge.pages.MovimentPage;
 import edge.utils.DateUtils;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
 public class TestsMovimentation extends BaseTest{
     MenuPage menu = new MenuPage();    
     MovimentPage moviment = new MovimentPage();

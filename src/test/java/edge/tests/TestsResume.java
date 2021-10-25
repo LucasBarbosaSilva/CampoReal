@@ -2,15 +2,12 @@ package edge.tests;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import edge.core.BaseTest;
 import edge.pages.MenuPage;
 import edge.pages.ResumePage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestsResume extends BaseTest{
     MenuPage menu = new MenuPage();
     ResumePage resume = new ResumePage();
@@ -25,6 +22,9 @@ public class TestsResume extends BaseTest{
     @Test
     public void test2_ResumeEmpty(){
         menu.goToResume();
+        resume.selectMounthOctuber();
+        resume.selectYear2020();
+        resume.clickToSearch(); 
         assertEquals(0, resume.getSizeList()); 
     }
 }

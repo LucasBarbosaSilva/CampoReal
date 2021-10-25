@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import edge.core.BasePage;
-import edge.core.Properties;
 
 import static edge.core.DriverFactory.getDriver;
 
@@ -38,7 +37,7 @@ public class MovimentPage extends BasePage {
     }
     
     public void setAccountOne(){
-        selectCombo("conta", Properties.CONTA_ALTERADA);
+        selectCombo("conta", "Conta para movimentacoes");
     }
 
     public void setPaid(){

@@ -23,6 +23,10 @@ public class LoginPage extends BasePage{
         clickButtonByText("Entrar");
     }
 
+    public void reset(){
+        clickButtonByText("reset");
+    }
+
     public void login(String email, String password ){
         setEmail(email);
         setPassword(password);
