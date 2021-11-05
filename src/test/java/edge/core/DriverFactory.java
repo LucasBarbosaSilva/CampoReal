@@ -7,7 +7,6 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -59,13 +58,13 @@ public class DriverFactory {
                 case CHROME: cap = DesiredCapabilities.chrome(); break;
             }
 
-            // cap.setCapability("username", "oauth-blucas.oficial-a3227");
+            // options.setCapability("username", "oauth-blucas.oficial-a3227");
             // cap.setCapability("accessKey", "cbd32e1d-7c08-4404-af36-d8a82cbe870c");
             // cap.setCapability("name", testName.getMethodName());
             // cap.setCapability("browserVersion", "latest");
 
             try {
-                driver = new RemoteWebDriver(new URL("https://oauth-blucas.oficial-a3227:cbd32e1d-7c08-4404-af36-d8a82cbe870c@ondemand.us-west-1.saucelabs.com:80/wd/hub"), cap);
+                driver = new RemoteWebDriver(new URL("https://oauth-blucas.oficial-a3227:cbd32e1d-7c08-4404-af36-d8a82cbe870c@ondemand.us-west-1.saucelabs.com:443/wd/hub"), cap);
             } catch (MalformedURLException e) {
                 System.err.println("Falha na conexão com o GRID: "+ e);
                 e.printStackTrace();
